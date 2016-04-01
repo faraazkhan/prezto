@@ -34,9 +34,9 @@ unsetopt FLOW_CONTROL      # Disable start/stop characters in shell editor.
 autoload -Uz compinit
 compfiles=(${ZDOTDIR:-$HOME}/.zcompdump(Nm-20))
 if [[ $#compfiles > 0 ]]; then
-  compinit -i -C
+  compinit -i -C -D
 else
-  compinit -i
+  compinit -i -D
 fi
 
 #
